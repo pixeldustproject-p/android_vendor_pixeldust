@@ -36,6 +36,15 @@ type Product_variables struct {
 		Srcs []string
 	}
 
+	Supports_hw_fde struct {
+		Cflags []string
+		Header_libs []string
+		Shared_libs []string
+	}
+	Supports_hw_fde_perf struct {
+		Cflags []string
+	}
+
 	Target_uses_qsml struct {
 		Cflags []string
 		Shared_libs []string
@@ -70,6 +79,8 @@ type ProductVariables struct {
 	Cant_reallocate_omx_buffers           *bool `json:",omitempty"`
 	Qcom_bsp_legacy                       *bool `json:",omitempty"`
 	Qti_flac_decoder                      *bool `json:",omitempty"`
+	Supports_hw_fde                       *bool `json:",omitempty"`
+	Supports_hw_fde_perf                  *bool `json:",omitempty"`
 	Target_uses_qsml                      *bool `json:",omitempty"`
 	Target_uses_eigen                     *bool `json:",omitempty"`
 	Target_use_sdclang                    *bool `json:",omitempty"`
