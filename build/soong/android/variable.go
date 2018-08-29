@@ -14,6 +14,10 @@ type Product_variables struct {
 
 	Mtk_hardware struct {
 		Cflags []string
+        }
+
+	Target_process_sdk_version_override struct {
+		Cppflags []string
 	}
 
 	Cant_reallocate_omx_buffers struct {
@@ -71,4 +75,5 @@ type ProductVariables struct {
 	Target_use_sdclang                    *bool `json:",omitempty"`
 	Target_shim_libs                      *string `json:",omitempty"`
 	Additional_gralloc_10_usage_bits      *string `json:",omitempty"`
+	Target_process_sdk_version_override   *string `json:",omitempty"`
 }

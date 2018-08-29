@@ -16,6 +16,7 @@ $(call add_json_bool, Target_uses_qsml,                      $(filter true,$(if 
 $(call add_json_bool, Target_uses_eigen,                     $(filter true,$(if $(strip $(TARGET_USES_QSML)),false,true)))
 $(call add_json_bool, Target_use_sdclang,                    $(filter true,$(if $(strip $(TARGET_USE_SDCLANG)),true,false)))
 
+$(call add_json_str_omitempty, Target_process_sdk_version_override, $(TARGET_PROCESS_SDK_VERSION_OVERRIDE))
 $(call add_json_str,  Specific_camera_parameter_library,     $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY))
 $(call add_json_str,  Libart_img_base,                       $(LIBART_IMG_BASE))
 $(call add_json_str,  QTIAudioPath,                          $(call project-path-for,qcom-audio))
