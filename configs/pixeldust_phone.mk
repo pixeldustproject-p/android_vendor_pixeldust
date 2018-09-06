@@ -22,8 +22,8 @@ include vendor/pixeldust/configs/version.mk
 include vendor/pixeldust/configs/ota.mk
 
 # World APN list
-PRODUCT_COPY_FILES += \
-    vendor/pixeldust/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+PRODUCT_PACKAGES += \
+    apns-conf.xml
 
 # Telephony packages
 PRODUCT_PACKAGES += \
