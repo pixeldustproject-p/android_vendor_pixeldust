@@ -27,3 +27,7 @@ endif
 ifeq (pixeldust_taimen,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_taimen.mk
 endif
+
+ifeq (pixeldust_shamu,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_shamu.mk
+endif
