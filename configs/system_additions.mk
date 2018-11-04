@@ -78,7 +78,16 @@ PRODUCT_PACKAGES += \
     DialerThemeShishuNights \
     FilesThemeShishuNights \
     GBoardThemeShishuNights \
-    WellbeingThemeShishuNights
+    WellbeingThemeShishuNights \
+    SettingsShishuCosmosTheme \
+    SystemUIShishuCosmosTheme \
+    SystemShishuCosmosTheme \
+    ContactsThemeShishuCosmos \
+    DialerThemeShishuCosmos \
+    FilesThemeShishuCosmos \
+    GBoardThemeShishuCosmos \
+    GMSThemeShishuCosmos \
+    WellbeingThemeShishuCosmos
 
 # Overlays
 PRODUCT_PACKAGES += \
