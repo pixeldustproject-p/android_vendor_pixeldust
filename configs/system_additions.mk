@@ -19,6 +19,10 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker
 
+# Ambient Play
+PRODUCT_PACKAGES += \
+    AmbientPlayHistoryProvider
+
 # Fonts
 PRODUCT_PACKAGES += \
     PD-Fonts
