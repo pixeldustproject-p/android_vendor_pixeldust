@@ -17,6 +17,14 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker
 
+# WeatherProvider
+PRODUCT_PACKAGES += \
+    WeatherProvider
+
+PRODUCT_COPY_FILES += \
+    vendor/pixeldust/prebuilt/common/etc/permissions/com.android.providers.weather.xml:system/etc/permissions/com.android.providers.weather.xml \
+    vendor/pixeldust/prebuilt/common/etc/default-permissions/com.android.providers.weather.xml:system/etc/default-permissions/com.android.providers.weather.xml
+
 # Ambient Play
 PRODUCT_PACKAGES += \
     AmbientPlayHistoryProvider
