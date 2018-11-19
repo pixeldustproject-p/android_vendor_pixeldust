@@ -14,8 +14,6 @@
 
 # Extra Packages
 PRODUCT_PACKAGES += \
-    OmniJaws \
-    WeatherIcons \
     LiveWallpapers \
     LiveWallpapersPicker
 
