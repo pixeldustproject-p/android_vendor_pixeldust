@@ -15,7 +15,8 @@
 # Extra Packages
 PRODUCT_PACKAGES += \
     LiveWallpapers \
-    LiveWallpapersPicker
+    LiveWallpapersPicker \
+    Launcher3
 
 # WeatherProvider
 PRODUCT_PACKAGES += \
