@@ -16,7 +16,8 @@
 PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
-    Launcher3
+    Launcher3 \
+    SubstratumSignature
 
 # WeatherProvider
 PRODUCT_PACKAGES += \
