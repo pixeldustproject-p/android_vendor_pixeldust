@@ -14,6 +14,7 @@
 
 # Extra Packages
 PRODUCT_PACKAGES += \
+    CustomDoze \
     LiveWallpapers \
     LiveWallpapersPicker \
     Launcher3 \
