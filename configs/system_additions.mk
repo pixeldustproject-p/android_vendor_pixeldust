@@ -86,7 +86,8 @@ PRODUCT_PACKAGES += \
     FilesThemeShishuCosmos \
     GBoardThemeShishuCosmos \
     GMSThemeShishuCosmos \
-    WellbeingThemeShishuCosmos
+    WellbeingThemeShishuCosmos \
+    GBoardThemeLight
 
 # Overlays
 PRODUCT_PACKAGES += \
