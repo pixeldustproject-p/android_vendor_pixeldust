@@ -22,6 +22,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     WeatherProvider
 
+# CAF Telephony packages
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/common/etc/permissions/com.android.providers.weather.xml:system/etc/permissions/com.android.providers.weather.xml \
     vendor/pixeldust/prebuilt/common/etc/default-permissions/com.android.providers.weather.xml:system/etc/default-permissions/com.android.providers.weather.xml
