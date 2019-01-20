@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter pixeldust_marlin pixeldust_taimen,$(TARGET_PRODUCT)),)
+ifneq ($(filter pixeldust_marlin pixeldust_mido pixeldust_sailfish pixeldust_shamu pixeldust_taimen pixeldust_Z00L,$(TARGET_PRODUCT)),)
 
 PRODUCT_PACKAGES += \
     PixelDustOTA
