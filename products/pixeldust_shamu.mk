@@ -37,6 +37,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Include optional stuff (e.g. prebuilt apps)
 include vendor/pixeldust/configs/system_optional.mk
 
+# Include prebuilt Pixel Launcher
+include vendor/pixeldust/configs/nexuslauncher.mk
+
 # Google Apps
 $(call inherit-product, vendor/googleapps/googleapps.mk)
 
