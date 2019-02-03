@@ -40,9 +40,6 @@ include vendor/pixeldust/configs/system_optional.mk
 # Include prebuilt Pixel Launcher
 include vendor/pixeldust/configs/nexuslauncher.mk
 
-# Google Apps
-$(call inherit-product, vendor/googleapps/googleapps.mk)
-
 PRODUCT_NAME := pixeldust_shamu
 PRODUCT_DEVICE := shamu
 PRODUCT_BRAND := google
