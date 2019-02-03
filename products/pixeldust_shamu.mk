@@ -29,7 +29,7 @@ $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/moto/shamu/device.mk)
-$(call inherit-product, vendor/motorola/shamu/shamu-vendor.mk)
+$(call inherit-product, vendor/moto/shamu/device-vendor.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
