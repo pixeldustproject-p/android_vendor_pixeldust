@@ -11,6 +11,7 @@ $(call add_json_bool, BoardUsesQTIHardware,                  $(filter true,$(if 
 $(call add_json_bool, Cant_reallocate_omx_buffers,           $(filter true,$(if $(filter omap4,$(TARGET_BOARD_PLATFORM)),true,false)))
 $(call add_json_bool, Qcom_bsp_legacy,                       $(filter true,$(if $(filter msm7x27a msm7x30 msm8660 msm8960,$(TARGET_BOARD_PLATFORM)),true,false)))
 $(call add_json_bool, Qti_flac_decoder,                      $(filter true,$(if $(strip $(AUDIO_FEATURE_ENABLED_EXTN_FLAC_DECODER)),true,false)))
+$(call add_json_bool, Should_skip_waiting_for_qsee,          $(filter true,$(TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE)))
 $(call add_json_bool, Supports_hw_fde,                       $(filter true,$(TARGET_HW_DISK_ENCRYPTION)))
 $(call add_json_bool, Supports_hw_fde_perf,                  $(filter true,$(TARGET_HW_DISK_ENCRYPTION_PERF)))
 $(call add_json_bool, Supports_legacy_hw_fde,                $(filter true,$(TARGET_LEGACY_HW_DISK_ENCRYPTION)))
