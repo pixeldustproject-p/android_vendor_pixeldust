@@ -13,6 +13,7 @@ $(call add_json_bool, Qcom_bsp_legacy,                       $(filter true,$(if 
 $(call add_json_bool, Qti_flac_decoder,                      $(filter true,$(if $(strip $(AUDIO_FEATURE_ENABLED_EXTN_FLAC_DECODER)),true,false)))
 $(call add_json_bool, Supports_hw_fde,                       $(filter true,$(TARGET_HW_DISK_ENCRYPTION)))
 $(call add_json_bool, Supports_hw_fde_perf,                  $(filter true,$(TARGET_HW_DISK_ENCRYPTION_PERF)))
+$(call add_json_bool, Supports_legacy_hw_fde,                $(filter true,$(TARGET_LEGACY_HW_DISK_ENCRYPTION)))
 $(call add_json_bool, TargetUsesProprietaryLibs,             $(filter true,$(if $(strip $(TARGET_USES_PROPRIETARY_LIBS)),true,false)))
 $(call add_json_bool, Target_uses_qsml,                      $(filter true,$(if $(strip $(TARGET_USES_QSML)),true,false)))
 $(call add_json_bool, Target_uses_eigen,                     $(filter true,$(if $(strip $(TARGET_USES_QSML)),false,true)))

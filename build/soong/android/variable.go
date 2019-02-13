@@ -45,6 +45,10 @@ type Product_variables struct {
 		Cflags []string
 	}
 
+	Supports_legacy_hw_fde struct {
+		Cflags []string
+	}
+
 	Target_uses_qsml struct {
 		Cflags []string
 		Shared_libs []string
@@ -81,6 +85,7 @@ type ProductVariables struct {
 	Qti_flac_decoder                      *bool `json:",omitempty"`
 	Supports_hw_fde                       *bool `json:",omitempty"`
 	Supports_hw_fde_perf                  *bool `json:",omitempty"`
+	Supports_legacy_hw_fde                *bool `json:",omitempty"`
 	Target_uses_qsml                      *bool `json:",omitempty"`
 	Target_uses_eigen                     *bool `json:",omitempty"`
 	Target_use_sdclang                    *bool `json:",omitempty"`
