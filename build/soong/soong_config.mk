@@ -2,6 +2,7 @@ add_json_str_omitempty = $(if $(strip $(2)),$(call add_json_str, $(1), $(2)))
 
 $(eval _contents := $$(_contents)"Pixeldust": {$$(newline))
 
+$(call add_json_bool, Apply_msm8974_1440p_egl_workaround,    $(filter true,$(TARGET_MSM8974_1440P_EGL_WORKAROUND)))
 $(call add_json_bool, Has_legacy_camera_hal1,                $(filter true,$(if $(filter true,$(TARGET_HAS_LEGACY_CAMERA_HAL1)),true,false)))
 $(call add_json_bool, Uses_media_extensions,                 $(filter true,$(if $(filter true,$(TARGET_USES_MEDIA_EXTENSIONS)),true,false)))
 $(call add_json_bool, Uses_generic_camera_parameter_library, $(filter true,$(if $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY),false,true)))
