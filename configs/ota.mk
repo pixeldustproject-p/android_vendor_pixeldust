@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The Pixel Dust Project
+# Copyright (C) 2019 The Pixel Dust Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,6 +11,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+ifndef SIGN_KEY
+  SIGN_KEY := UNOFFICIAL
+endif
+PRODUCT_BUILD_PROP_OVERRIDES := BUILD_DISPLAY_ID=$(BUILD_VERSION)-$(SIGN_KEY)
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_BUILD_TYPE=user
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    com.pixeldust.fingerprint=$(BUILD_VERSION) \
+    ro.pixeldust.device=$(TARGET_DEVICE) \
+    ro.pixeldust.ota.version=$(PIXELDUST_VERSION)
 
 ifneq ($(filter pixeldust_blueline pixeldust_marlin pixeldust_mido pixeldust_sailfish pixeldust_shamu pixeldust_taimen pixeldust_Z00L,$(TARGET_PRODUCT)),)
 

@@ -14,16 +14,7 @@
 
 # Pixel Dust ROM versioning
 BUILD_VERSION := PixelDustROM-$(PLATFORM_VERSION)-$(shell date +%Y%m%d)
-PD_BUILDTYPE := RELEASE
-
-PRODUCT_BUILD_PROP_OVERRIDES := BUILD_DISPLAY_ID=$(BUILD_VERSION)-$(PD_BUILDTYPE)
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_BUILD_TYPE=user
 
 # Pixel Dust ROM package name 
-PIXELDUST_VERSION := $(TARGET_PRODUCT)-pie-release-five-$(shell date +%Y%m%d-%H%M)
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    com.pixeldust.fingerprint=$(BUILD_VERSION) \
-    ro.pixeldust.device=$(TARGET_DEVICE) \
-    ro.pixeldust.ota.version=$(PIXELDUST_VERSION)
+PIXELDUST_VERSION := $(TARGET_PRODUCT)-pie-release-six-$(shell date +%Y%m%d-%H%M)
 
