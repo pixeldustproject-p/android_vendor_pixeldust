@@ -15,11 +15,11 @@
 include vendor/pixeldust/configs/aosp_fixes.mk
 include vendor/pixeldust/configs/art.mk
 include vendor/pixeldust/configs/bootanimation.mk
-include vendor/pixeldust/configs/ota.mk
 include vendor/pixeldust/configs/pixeldust_main.mk
 include vendor/pixeldust/configs/pixeldust_optimizations.mk
 include vendor/pixeldust/configs/system_additions.mk
 include vendor/pixeldust/configs/version.mk
+include vendor/pixeldust/configs/ota.mk
 
 # World APN list
 PRODUCT_COPY_FILES += \
