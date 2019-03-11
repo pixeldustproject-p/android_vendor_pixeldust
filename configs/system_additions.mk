@@ -20,9 +20,9 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     SubstratumSignature
 
-# WeatherProvider
+# WeatherClient
 PRODUCT_PACKAGES += \
-    WeatherProvider
+    WeatherClient
 
 # CAF Telephony packages
 PRODUCT_PACKAGES += \
