@@ -25,9 +25,6 @@ include vendor/pixeldust/configs/pixeldust_phone.mk
 # Include optional stuff (e.g. prebuilt apps)
 include vendor/pixeldust/configs/system_optional.mk
 
-# Include prebuilt Pixel Launcher
-include vendor/pixeldust/configs/nexuslauncher.mk
-
 # Google Apps
 $(call inherit-product, vendor/googleapps/googleapps.mk)
 
