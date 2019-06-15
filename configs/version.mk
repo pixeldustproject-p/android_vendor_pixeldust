@@ -16,5 +16,5 @@
 BUILD_VERSION := PixelDustROM-$(PLATFORM_VERSION)-$(shell date +%Y%m%d)
 
 # Pixel Dust ROM package name 
-PIXELDUST_VERSION := $(TARGET_PRODUCT)-pie-release-eight-$(shell date +%Y%m%d-%H%M)
+PIXELDUST_VERSION := $(TARGET_PRODUCT)-pie-release-nine-$(shell date +%Y%m%d-%H%M)
 
